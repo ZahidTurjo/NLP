@@ -13,7 +13,7 @@ height=driver.execute_script('return document.body.scrollHeight')
 
 print(height)
 
-for i in range(0,height+1100,60):
+for i in range(0,height+1200,60):
     driver.execute_script(f'window.scrollTo(0,{i})')
     time.sleep(2)
 
