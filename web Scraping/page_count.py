@@ -6,6 +6,7 @@ driver = webdriver.Chrome()
 driver.get("https://www.daraz.com.bd/catalog/?spm=a2a0e.searchlist.search.d_go.5a1924055AA4qF&q=laptop")
 
 last_height = driver.execute_script("return document.body.scrollHeight")
+print(f"last_height--->{last_height}")
 time.sleep(3)
 while True:
     
@@ -13,6 +14,7 @@ while True:
     time.sleep(3) 
 
     new_height = driver.execute_script("return document.body.scrollHeight")
+    print(f"new_height-->{new_height}")
     if new_height == last_height:
         break
     last_height = new_height
