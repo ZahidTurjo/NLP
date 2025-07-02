@@ -34,11 +34,11 @@ reviews=soup.find("ul",id="cm-cr-dp-review-list").text.strip()
 # print(reviews)
 
 import csv
-with open("amazon_headPhn data.csv",mode='w',newline='', encoding="utf-8")as f:
-    writer=csv.writer(f)
-    writer.writerow(["product_title", "product_price", "product_rating", "product_bp", "product_description", "reviews"])
+# with open("amazon_headPhn data.csv",mode='w',newline='', encoding="utf-8")as f:
+#     writer=csv.writer(f)
+#     writer.writerow(["product_title", "product_price", "product_rating", "product_bp", "product_description", "reviews"])
 
-    writer.writerow([product_title, product_price, product_rating, product_bp, product_des, reviews])
+#     writer.writerow([product_title, product_price, product_rating, product_bp, product_des, reviews])
 
 
 print("All Ok!")
